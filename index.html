@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Palak | A Little Surprise</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen text-slate-800">
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <nav class="relative z-10 mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+    <a href="index.html" class="brand">little<span>✨</span>note</a>
+    <a href="memories.html" class="nav-link">A note for you <span>↗</span></a>
+  </nav>
+
+  <main class="relative z-10 mx-auto grid min-h-[78vh] max-w-6xl items-center gap-12 px-6 pb-16 pt-5 lg:grid-cols-[1.05fr_.95fr]">
+    <section class="fade-up">
+      <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/80 bg-white/70 px-4 py-2 text-xs font-bold uppercase tracking-[.18em] text-violet-600 shadow-sm">
+        <span class="h-2 w-2 rounded-full bg-pink-400"></span> Made just for Palak
+      </div>
+      <p class="mb-3 text-sm font-semibold tracking-[.22em] text-pink-500 uppercase">A small reminder</p>
+      <h1 class="hero-title">Hey, <span>Palak.</span><br>You're one of a kind.</h1>
+      <p class="mt-7 max-w-xl text-base leading-8 text-slate-600 md:text-lg">
+        Kuch baatein saamne se kehna mushkil hota hai, isliye socha ek chhota sa page bana doon.
+        Ye bas ek reminder hai ki tumhari dosti mere liye genuinely special hai.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <button id="openNote" class="primary-btn">Open your little surprise <span>✦</span></button>
+        <a href="memories.html" class="secondary-btn">Read your note <span>→</span></a>
+      </div>
+      <p class="mt-5 text-xs text-slate-400">No big words. Just a little appreciation. 💜</p>
+    </section>
+
+    <section class="relative mx-auto w-full max-w-md fade-up delay-2">
+      <div class="float-card">
+        <div class="card-top"><span>✿</span><span>FOR SOMEONE SPECIAL</span><span>✿</span></div>
+        <div class="flower-art" aria-hidden="true">
+          <div class="sun-glow"></div><div class="flower-center">✦</div>
+          <i class="petal p1"></i><i class="petal p2"></i><i class="petal p3"></i><i class="petal p4"></i><i class="petal p5"></i><i class="petal p6"></i>
+          <div class="stem"></div><div class="leaf leaf-left"></div><div class="leaf leaf-right"></div>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-violet-700">Palak</p>
+          <p class="mt-2 text-sm tracking-wide text-slate-400">A lovely friend, a lovely soul.</p>
+        </div>
+        <div class="mt-7 flex justify-center gap-2 text-xl text-pink-400"><span>♡</span><span>✧</span><span>♡</span></div>
+      </div>
+      <span class="decor decor-a">✧</span><span class="decor decor-b">♡</span><span class="decor decor-c">✦</span>
+    </section>
+  </main>
+
+  <div id="noteModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button id="closeNote" class="close-btn" aria-label="Close">×</button>
+      <div class="mb-3 text-4xl">💌</div>
+      <p class="eyebrow">A little message for you</p>
+      <h2 id="modalTitle" class="mt-2 font-serif text-3xl text-violet-700">You matter, Palak.</h2>
+      <p class="mt-5 leading-8 text-slate-600">
+        Us din mujhe bilkul andaaza nahi tha ki tum wahan ho. Pata hota toh zaroor milne aata.
+        I'm sorry tumhe bura laga. Main bas itna kehna chahta hoon ki tumhari fikr hai,
+        aur tumhari friendship mere liye important hai. Party abhi baaki hai! 😊
+      </p>
+      <a href="memories.html" class="primary-btn mt-7 inline-flex">There's one more page <span>→</span></a>
+    </div>
+  </div>
+  <footer class="relative z-10 pb-7 text-center text-xs text-slate-400">Made with care, especially for Palak ✨</footer>
+  <script src="script.js"></script>
+</body>
+</html>
